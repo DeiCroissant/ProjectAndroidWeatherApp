@@ -17,13 +17,18 @@ android {
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 
-        // Load API key from local.properties
-        val properties = Properties()
-        val localPropertiesFile = rootProject.file("local.properties")
-        if (localPropertiesFile.exists()) {
-            properties.load(localPropertiesFile.inputStream())
+        // Load API key from .env file
+        val envFile = rootProject.file(".env")
+        if (!envFile.exists()) {
+            throw GradleException(".env file not found in project root. Please create it with OWM_API_KEY=your_key")
         }
-        val apiKey = properties.getProperty("OWM_API_KEY") ?: "your_api_key_here"
+        val envProperties = Properties()
+        envFile.inputStream().use { envProperties.load(it) }
+        val apiKey = envProperties.getProperty("OWM_API_KEY")
+            ?: throw GradleException("OWM_API_KEY not found in .env file. Please add OWM_API_KEY=your_key")
+        if (apiKey == "your_api_key_here" || apiKey.isBlank()) {
+            logger.warn("WARNING: OWM_API_KEY is not set. Please update .env with a valid API key.")
+        }
         buildConfigField("String", "OWM_API_KEY", "\"$apiKey\"")
     }
 
