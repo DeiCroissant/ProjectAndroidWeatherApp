@@ -35,7 +35,7 @@ This project is built using native Android technologies and modern libraries to 
 
 <div align="center">
 
-### Core & Architecture
+<h3>Core & Architecture</h3>
 <p>
   <img src="https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white" alt="Android" />
   <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java" />
@@ -43,18 +43,21 @@ This project is built using native Android technologies and modern libraries to 
   <img src="https://img.shields.io/badge/MVC-Pattern-blue?style=for-the-badge" alt="MVC Architecture" />
 </p>
 
-### Networking & Data
+<h3>Networking & Data</h3>
 <p>
   <img src="https://img.shields.io/badge/Retrofit_2-Square-square?style=for-the-badge&logo=square&logoColor=white" alt="Retrofit 2" />
   <img src="https://img.shields.io/badge/GSON-Parser-4285F4?style=for-the-badge&logo=google&logoColor=white" alt="Gson" />
   <img src="https://img.shields.io/badge/OpenWeatherMap-API-EB6E4B?style=for-the-badge&logo=openweathermap&logoColor=white" alt="OpenWeather API" />
 </p>
 
-### Tools & Build System
+<h3>Tools & Build System</h3>
 <p>
   <img src="https://img.shields.io/badge/Android_Studio-3DDC84?style=for-the-badge&logo=android-studio&logoColor=white" alt="Android Studio" />
   <img src="https://img.shields.io/badge/Gradle-02303A?style=for-the-badge&logo=gradle&logoColor=white" alt="Gradle" />
-  <img src="
+  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
+</p>
+
+</div>
 
 ## 🚀 How to Run
 
